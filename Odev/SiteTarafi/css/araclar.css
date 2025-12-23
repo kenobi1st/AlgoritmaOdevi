@@ -1,0 +1,180 @@
+/* --- ARAÇLAR (UI KİTİ) --- */
+
+/* Kartlar (Kutular) */
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Profil Çubuğu */
+.user-profile-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: #222;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+.user-profile-bar:hover {
+    background: #333;
+    border-color: #00ff41;
+}
+
+.avatar-icon {
+    font-size: 18px;
+}
+
+.user-name-disp {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+.edit-hint {
+    font-size: 10px;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* Form Elemanları */
+input,
+select {
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #00ff41;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 65, 0.2);
+}
+
+label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+    display: block;
+    margin-left: 2px;
+}
+
+/* Butonlar */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    transition: 0.2s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    filter: grayscale(90%);
+    border-color: #333;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.btn-green {
+    background: #00ff41;
+    color: #000;
+}
+
+.btn-green:hover {
+    background: #00cc33;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+    transform: scale(1.02);
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.btn-dark:hover {
+    background: #444;
+}
+
+/* Sohbet Balonları */
+.chat-bubble {
+    background: #222;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border-left: 2px solid #00ff41;
+}
+
+.chat-bubble strong {
+    color: #00ff41;
+    margin-right: 5px;
+}
+
+/* Liste Elemanları */
+.active-user-item,
+.invite-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+    background: #111;
+    margin-bottom: 2px;
+    border-radius: 4px;
+}
+
+.invite-row span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.invite-btn,
+.btn-invite-send {
+    background: #00e5ff;
+    color: #000;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    width: auto;
+}
+
+.invite-btn:hover,
+.btn-invite-send:hover {
+    background: #00b8d4;
+}
+
+.btn-invite-send {
+    background: #00ff41;
+}
+
+/* Davet gönder butonu yeşil olsun */

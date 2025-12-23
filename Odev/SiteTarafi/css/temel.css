@@ -1,0 +1,51 @@
+/* --- TEMEL AYARLAR --- */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Ekranların Geçiş Mantığı */
+.screen {
+    display: none;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.active-screen {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+/* Logo ve Marka */
+.brand {
+    text-align: center;
+    color: #00ff41;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+/* Başlıklar */
+h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Yardımcı Sınıflar */
+.hidden {
+    display: none !important;
+}
